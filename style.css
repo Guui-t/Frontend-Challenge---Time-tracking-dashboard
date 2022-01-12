@@ -107,6 +107,10 @@ button:hover {
     width: 100%;
 }
 
+.column {
+    padding-top: 5rem;
+}
+
 .content {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -118,7 +122,6 @@ button:hover {
 
 subtitle {
     color: hsl(236, 100%, 87%);
-    padding-top: 5rem;
 }
 
 name {
@@ -130,11 +133,6 @@ name {
 }
 
 
-/* div {
-    border-style: solid;
-    border-color: red;
-} */
-
 .report {
     display:flex;
     flex-direction: column;
@@ -144,7 +142,7 @@ name {
 }
 
 .report img {
-    width: 35%;
+    width: 50%;
     border-radius: 360px;
     border-style:solid;
     border-color: white;
@@ -228,6 +226,7 @@ name {
         flex-direction: column;
         flex-wrap: nowrap;
         padding-inline-start: 10%;
+        padding-top: 0;
     }
     .card-report{
         display: grid;
@@ -244,7 +243,7 @@ name {
     }
 
     .report img {
-        width: 5rem;
+        width: 7rem;
     }
 
     .dashboard{
@@ -275,6 +274,10 @@ name {
     .card h2 {
         font-size: 2rem;
     }
+
+    .report {
+        padding: 5%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -289,9 +292,10 @@ name {
     }
 
     name {
-        font-size: 2rem;
+        font-size: 1.5rem;
         width: auto;
    }
+
 
    .report img {
        width: 30%;
@@ -324,6 +328,14 @@ name {
 @media (max-width: 500px) {
     :root {
         font-size: 12px;
+    }
+
+    .achievements {
+        flex-wrap: wrap;
+    }
+
+    name {
+        font-size: 1.5rem ;
     }
 }
     
