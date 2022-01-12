@@ -1,0 +1,331 @@
+:root {
+    font-size: 18px;
+}
+/* Definindo o tamanho padrão das fontes */
+body {
+    font-family: 'rubik';
+    font-weight: 300, 400, 500;
+    background-color: hsl(226, 43%, 10%);
+    color: white;
+}
+
+* {
+    border-radius: 1rem;
+    font-family: 'rubik';
+    font-weight: 300, 400, 500;
+}
+
+.card h1 {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.card h2 {
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.card p {
+    font-size: 1rem;
+    font-weight: 300;
+    color:hsl(236, 100%, 87%);
+}
+
+button {
+    align-self: flex-start;
+    margin-block: 1rem;
+    font-size: 1rem;
+    color: hsl(236, 100%, 87%);
+    background-color: transparent;
+    border-radius: 0px;
+    border: none;
+    width: auto;
+    height: 1rem;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+/* Background */
+
+/* Cores primárias */
+
+#blue {
+    background-color: hsl(246, 80%, 60%);
+}
+
+#light_red {
+    background-color: hsl(15, 100%, 70%);
+}
+
+ 
+#soft_blue{
+    background-color: hsl(195, 74%, 62%);
+}
+
+#red {
+    background-color: hsl(348, 100%, 68%);
+}
+
+#lime_green {
+    background-color: hsl(145, 58%, 55%);
+}
+
+#violet {
+    background-color: hsl(264, 64%, 52%);
+}
+
+#soft_orange {
+    background-color: hsl(43, 84%, 65%);
+}
+
+/* Cores neutras */
+
+#very_dark_blue {
+    background-color:hsl(226, 43%, 10%);
+}
+
+#dark_blue {
+    background-color: hsl(235, 46%, 20%);
+}
+
+#desatured_blue{
+    background-color: hsl(235, 45%, 61%);
+}
+
+#pale_blue {
+    background-color: hsl(236, 100%, 87%);
+}
+
+
+.hidden {
+    visibility: hidden;
+}
+
+.container{
+    width: 100%;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto-fill repeat(2, 1fr);
+
+    gap: 2rem;
+    margin: 10%;
+}
+
+subtitle {
+    color: hsl(236, 100%, 87%);
+    padding-top: 5rem;
+}
+
+name {
+    width:50%;
+    color: white;
+    font-family: "rubik";
+    font-weight: normal;
+    font-size: 3rem;
+}
+
+
+/* div {
+    border-style: solid;
+    border-color: red;
+} */
+
+.report {
+    display:flex;
+    flex-direction: column;
+    padding: 15%;
+    height: 80%;
+    
+}
+
+.report img {
+    width: 35%;
+    border-radius: 360px;
+    border-style:solid;
+    border-color: white;
+    border-width: 2px;
+}
+
+.info {
+    margin-top: 20% ;
+    padding: 10%;
+    height: 200%;
+    background-color: hsl(235, 46%, 20%);
+    z-index: 1;
+}
+
+.dashboard{
+    display:flex;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 10%;
+}
+
+.card {
+    position: relative;
+    width: auto;
+    display:flex;
+    flex-direction: column;
+    line-height: 1;
+
+}
+
+.card-report {
+    display:flex;
+    flex-direction: column;
+
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+#icon {
+    position: absolute;
+    align-self: flex-end;
+    width: 30%;
+    padding-right: 10%;
+}
+.active {
+    color: white;
+}
+
+.achievements {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.title img {
+    width: 1rem;
+
+}
+
+@media (max-width: 1440px) {
+    
+
+    subtitle {
+        padding-top: 0;
+    }
+    name {
+        width:100%;
+    }
+    
+    .column {
+        display:flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        padding-inline-start: 10%;
+    }
+    .card-report{
+        display: grid;
+        grid-template-columns: auto-fill repeat(2, 1fr);
+        grid-template-rows: auto-fill repeat(2, 1fr);
+    }
+
+    .report {
+        display: flex;
+        flex-direction: row;
+        width:auto;
+        align-items: center;
+        padding: 10%;
+    }
+
+    .report img {
+        width: 5rem;
+    }
+
+    .dashboard{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        width: auto;
+        padding: 5%;
+    }
+
+    
+    .card-report {
+        display:flex;
+        flex-direction: column;
+    
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 1;
+    }
+
+}
+@media (max-width: 1000px) {
+    :root{
+        font-size: 16px ;
+    }
+
+    .card h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .container{
+        width:auto;
+     
+    }
+
+    subtitle {
+        font-size: 70%;
+    }
+
+    name {
+        font-size: 2rem;
+        width: auto;
+   }
+
+   .report img {
+       width: 30%;
+       height: 30%;
+   }
+   
+   
+    .info h2 {
+        font-size: 1.5rem ;
+    }
+    .content{
+        display:flex;
+        flex-direction: column;
+        justify-items: space-between;
+    }
+
+    .achievements {
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .achievements p {
+        font-size: 1rem;
+    }
+
+}
+
+@media (max-width: 500px) {
+    :root {
+        font-size: 12px;
+    }
+}
+    
+
+

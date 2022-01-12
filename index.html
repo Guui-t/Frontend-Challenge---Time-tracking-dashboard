@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
+
+  <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Time tracking dashboard</title>
@@ -16,65 +18,145 @@
 </head>
 <body>
 
-  Report for
-  Jeremy Robson
+<div class="container">
 
-  Daily
-  Weekly
-  Monthly
+ 
+  <div class="content">
+    <div class="card-report" id="dark_blue">  
+      <div class="report" id="desatured_blue">
+        <img src="images/image-jeremy.png"></img>
 
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
+        <div class="column">
+          <subtitle>
+            Report for
+          </subtitle>
+          
+          <name>
+            Jeremy Robson
+          </name>
+        </div>
+      </div>
 
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
+      <div class="dashboard">
+        <button id="daily" class="active">Daily</button>
+        <button id="weekly">Weekly</button>
+        <button id="monthly">Monthly</button>
+      </div>
 
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
+      
+    </div>
 
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
+    <div class="card" id="light_red">
+      <img src="/images/icon-work.svg" id="icon">
+      <div class="info">
 
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
+        <div class="title">
+          <h1>Work</h1>
+          <img src="/images/icon-ellipsis.svg">
+        </div>
+       
+        <div class="achievements">
+          <h2 id="work time">5hrs</h2>
+          <p id="work previous">Previous - 7hrs</p>
+        </div>
 
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
+      </div>
+    </div>
 
+    <div class="card" id="soft_blue">
+      <img src="/images/icon-play.svg" id="icon">
+      <div class="info">
+
+        <div class="title">
+          <h1>Play</h1>
+          <img src="/images/icon-ellipsis.svg">
+        </div>
+
+        <div class="achievements">
+          <h2 id="play time">1hr</h2>
+          <p id="play previous">Previous - 2hrs</p>
+        </div>
+       
+      </div>
+    </div>
+    
+    <div class="card" id="red">
+      <img src="/images/icon-study.svg" id="icon">
+      <div class="info">
+
+        <div class="title">
+          <h1>Study</h1>
+          <img src="/images/icon-ellipsis.svg">
+        </div>
+          
+        <div class="achievements">
+          <h2 id="study time">0hrs</h2>
+          <p id="study previous">Previous - 1hr</p>
+        </div>
+     
+      </div>
+    </div>
+    
+    <div class="card" id="lime_green">
+      <img src="/images/icon-exercise.svg" id="icon">
+      <div class="info">
+
+        <div class="title">
+          <h1>Exercise</h1>
+          <img src="/images/icon-ellipsis.svg">
+        </div>
+
+        <div class="achievements">
+          <h2 id="exercise time">1hr</h2>
+          <p id="exercise previous">Previous - 1hr</p>
+        </div>
+      
+      </div>
+    </div>
+    
+    <div class="card" id="violet">
+      <img src="/images/icon-social.svg" id="icon">
+      <div class="info">
+
+        <div class="title">
+          <h1>Social</h1>
+          <img src="/images/icon-ellipsis.svg">
+        </div>
+
+        <div class="achievements">
+          <h2 id="social time">1hr</h2>
+          <p id="social previous">Previous - 3hrs</p>
+        </div>
+
+      </div>
+    </div>
+    
+    <div class="card" id="soft_orange">
+      <img src="/images/icon-self-care.svg" id="icon">
+      <div class="info">
+
+        <div class="title">
+          <h1>Self Care</h1>
+          <img src="/images/icon-ellipsis.svg">
+
+        </div>
+
+        <div class="achievements">
+          <h2 id="selfcare time">0hrs</h2>
+          <p id="selfcare previous">Previous - 1hr</p>
+        </div>
+        
+      </div>
+    </div>
+
+  </div>
+
+  <script type="text/javascript" src="main.js"></script>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Guilherme Teixeira</a>.
   </div>
+</div>
 </body>
 </html>
